@@ -6,4 +6,4 @@
 👉 [Смотреть сайт на GitHub Pages](https://Russtam16.github.io/project_rustam_habsida_6.8/)
 
 ## Скриншот
-![alt text](page.png)
+![alt text](Page.png)
