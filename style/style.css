@@ -196,7 +196,7 @@ body {
 @media (min-width: 768px) {
     .header__container,
     .services__container {
-        max-width: 768px;
+        max-width: 1120px;
         padding: 0 24px;
     }
 
@@ -214,7 +214,7 @@ body {
 @media (min-width: 1120px) {
     .header__container,
     .services__container {
-        max-width: 1120px;
+        max-width: 1650px;
         padding: 0 32px;
     }
 
@@ -232,7 +232,7 @@ body {
     .services__body {
         display: flex;
         align-items: flex-start;
-        gap: 60px;
+        gap: 120px;
     }
 
     .services__description {
