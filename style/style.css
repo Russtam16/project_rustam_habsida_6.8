@@ -1,0 +1,246 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('./fonts/TTLakes-Regular.woff2') format('woff2'),
+       url('./fonts/TTLakes-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'TT Lakes', sans-serif;
+    background-color: #F8F8F8;
+    color: #1B1C21;
+}
+
+.header {
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+.header__container {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__burger,
+.header__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo-link {
+    display: block;
+    width: 98px;
+    height: 52px;
+}
+
+.header__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header__divider {
+    display: block;
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    margin-left: 10px;
+}
+
+.header__button--desktop,
+.header__divider--desktop {
+    display: none;
+}
+
+.header__actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.services {
+    padding: 24px 16px;
+}
+
+.services__container {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.services__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 24px;
+    position: relative;
+    padding-left: 16px;
+}
+
+.services__title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 4px;
+    background-color: #41F6D7;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.services__nav {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-bottom: 24px;
+}
+
+.services__nav::-webkit-scrollbar {
+    display: none;
+}
+
+.services__list {
+    display: flex;
+    list-style: none;
+    gap: 6px;
+}
+
+.services__item {
+    flex-shrink: 0;
+}
+
+.services__link {
+    display: inline-block;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #7E8E9A;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.services__link--active {
+    color: #1B1C21;
+    background-color: #FFFFFF;
+    border-color: #B8FFEC;
+}
+
+.services__description {
+    margin-bottom: 24px;
+}
+
+.services__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #1B1C21;
+    margin-bottom: 16px;
+}
+
+.services__read-more {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1B1C21;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 0;
+}
+
+.services__read-more-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.services__image-wrapper {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.services__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .header__container,
+    .services__container {
+        max-width: 768px;
+        padding: 0 24px;
+    }
+
+    .services__body {
+        display: flex;
+        gap: 32px;
+    }
+
+    .services__description,
+    .services__image-wrapper {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1120px) {
+    .header__container,
+    .services__container {
+        max-width: 1120px;
+        padding: 0 32px;
+    }
+
+    .header__button--desktop {
+        display: flex;
+    }
+
+    .header__divider--desktop {
+        display: block;
+        width: 2px;
+        height: 32px;
+        background-color: #EAEAEA;
+    }
+
+    .services__body {
+        display: flex;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .services__description {
+        flex: 1;
+        max-width: 500px;
+    }
+
+    .services__image-wrapper {
+        flex: 1;
+    }
+}
